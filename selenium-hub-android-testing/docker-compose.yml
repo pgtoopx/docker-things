@@ -15,7 +15,7 @@ services:
     depends_on:
       - selenium_hub
     ports:
-      - 6080
+      - 6080:6080
     volumes:
       - ./video-nexus-s_8.1:/tmp/video
     environment:
