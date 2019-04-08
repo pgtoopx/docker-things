@@ -6,18 +6,18 @@ firefox-node:
  image: selenium/node-firefox-debug
  ports:
   - 4577
+  - 5900
  links:
   - selenium-hub:hub
-chrome-node:
- image: selenium/node-chrome-debug
- ports:
-  - 4578
- links: 
-  - selenium-hub:hub
-chrome-node2:
- image: selenium/node-chrome-debug
- ports:
-  - 4579
- links:
-  - selenium-hub:hub
-
+# chrome-node:
+#  image: selenium/node-chrome-debug
+#  ports:
+#   - 4578
+#  links: 
+#   - selenium-hub:hub
+# chrome-node2:
+#  image: selenium/node-chrome-debug
+#  ports:
+#   - 5900:5900
+#  links:
+#   - selenium-hub:hub
