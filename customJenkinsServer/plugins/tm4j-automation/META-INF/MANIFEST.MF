@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hosting
+Build-Jdk: 1.8.0_191
+Extension-Name: tm4j-automation
+Specification-Title: Integration with Test Management for Jira (by Ada
+ ptavist), for automatic publishing of test results.
+Implementation-Title: tm4j-automation
+Implementation-Version: 1.3.0
+Group-Id: com.adaptavist
+Short-Name: tm4j-automation
+Long-Name: Test Management for Jira
+Url: https://wiki.jenkins.io/display/JENKINS/Test+Management+for+Jira
+Plugin-Version: 1.3.0
+Hudson-Version: 2.73.3
+Jenkins-Version: 2.73.3
+Plugin-Dependencies: junit:1.5
+Plugin-Developers: Adaptavist - Test Management for Jira::testmanageme
+ nt@adaptavist.com
+
