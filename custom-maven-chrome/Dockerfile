@@ -14,3 +14,7 @@ RUN mkdir -p /usr/share/maven \
     | tar -xzC /usr/share/maven --strip-components=1 \
   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 VOLUME /root/.m2
+
+COPY hosts /etc/hosts
+
+COPY settings.xml /root/.m2
