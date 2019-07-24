@@ -1,0 +1,3 @@
+#Here you can add some custom url that will be copy to docker on /etc/hosts
+# should be like 
+#127.0.0.1 localhost
