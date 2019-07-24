@@ -10,10 +10,10 @@ RUN apt-get -y update
 RUN apt install -y openjdk-8-jdk 
 
 RUN mkdir -p /usr/share/maven \
-  && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz \
+  && curl -fsSL http://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
     | tar -xzC /usr/share/maven --strip-components=1 \
   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
-COPY hosts /etc/hosts
+RUN echo "algo" >> /etc/hosts
 
 COPY settings.xml /root/.m2
