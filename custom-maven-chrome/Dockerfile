@@ -14,6 +14,4 @@ RUN mkdir -p /usr/share/maven \
     | tar -xzC /usr/share/maven --strip-components=1 \
   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
-RUN echo "algo" >> /etc/hosts
-
 COPY settings.xml /root/.m2
